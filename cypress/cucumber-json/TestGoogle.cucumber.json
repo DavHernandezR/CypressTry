@@ -1,0 +1,49 @@
+[
+  {
+    "description": "  I want to open a search engine",
+    "keyword": "Feature",
+    "name": "Google Main Page",
+    "line": 1,
+    "id": "google-main-page",
+    "tags": [],
+    "uri": "Google.feature",
+    "elements": [
+      {
+        "id": "google-main-page;opening-a-search-engine-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Opening a search engine page",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open Google page",
+            "result": {
+              "status": "passed",
+              "duration": 4023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see \"Youtube\" in the title",
+            "result": {
+              "status": "failed",
+              "duration": 4015000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 'Google' to include 'Youtube'\n    at Context.eval (https://www.google.com/__cypress/tests?p=cypress\\integration\\Google.feature:51:14)\n    at Context.resolveAndRunStepDefinition (https://www.google.com/__cypress/tests?p=cypress\\integration\\Google.feature:10453:29)\n    at Context.eval (https://www.google.com/__cypress/tests?p=cypress\\integration\\Google.feature:9774:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
